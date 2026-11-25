@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-11-25T11:06:53Z",
+  "stage_duration_s": 6.0,
+  "total_duration_s": 24.0,
+  "stages": [
+    {
+      "stage": 1,
+      "users": 100,
+      "stage_requests": 3083,
+      "stage_failures": 0,
+      "stage_rps": 513.44,
+      "cumulative_requests": 3083,
+      "cumulative_failures": 0,
+      "cumulative_rps": 616.52,
+      "avg_ms": 13.68,
+      "p50_ms": 2,
+      "p95_ms": 45,
+      "p99_ms": 110,
+      "error_rate_pct": 0.0
+    },
+    {
+      "stage": 2,
+      "users": 250,
+      "stage_requests": 6368,
+      "stage_failures": 0,
+      "stage_rps": 954.03,
+      "cumulative_requests": 9451,
+      "cumulative_failures": 0,
+      "cumulative_rps": 858.57,
+      "avg_ms": 18.59,
+      "p50_ms": 2,
+      "p95_ms": 60,
+      "p99_ms": 190,
+      "error_rate_pct": 0.0
+    },
+    {
+      "stage": 3,
+      "users": 500,
+      "stage_requests": 9494,
+      "stage_failures": 0,
+      "stage_rps": 1595.44,
+      "cumulative_requests": 18945,
+      "cumulative_failures": 0,
+      "cumulative_rps": 1088.5,
+      "avg_ms": 40.35,
+      "p50_ms": 10,
+      "p95_ms": 130,
+      "p99_ms": 690,
+      "error_rate_pct": 0.0
+    },
+    {
+      "stage": 4,
+      "users": 1000,
+      "stage_requests": 12570,
+      "stage_failures": 0,
+      "stage_rps": 1708.73,
+      "cumulative_requests": 31515,
+      "cumulative_failures": 0,
+      "cumulative_rps": 1269.0,
+      "avg_ms": 115.55,
+      "p50_ms": 36,
+      "p95_ms": 690,
+      "p99_ms": 1200,
+      "error_rate_pct": 0.0
+    }
+  ],
+  "overall": {
+    "total_requests": 31515,
+    "total_failures": 0,
+    "total_rps": 1269.0,
+    "avg_ms": 115.55,
+    "p50_ms": 36,
+    "p95_ms": 690,
+    "p99_ms": 1200,
+    "error_rate_pct": 0.0
+  },
+  "endpoints": {
+    "GET 0_Ping_GET /api/health [O(1)]": {
+      "requests": 4061,
+      "failures": 0,
+      "rps": 163.52,
+      "avg_ms": 144.41,
+      "p50_ms": 29,
+      "p95_ms": 960,
+      "p99_ms": 1200
+    },
+    "GET 1_Bootstrap_Static [200 br/gz]": {
+      "requests": 8945,
+      "failures": 0,
+      "rps": 360.18,
+      "avg_ms": 92.9,
+      "p50_ms": 57,
+      "p95_ms": 520,
+      "p99_ms": 750
+    },
+    "GET 2_GET /api/targets [200 RAM]": {
+      "requests": 1899,
+      "failures": 0,
+      "rps": 76.47,
+      "avg_ms": 104.98,
+      "p50_ms": 44,
+      "p95_ms": 600,
+      "p99_ms": 1200
+    },
+    "GET 3_Revalidate_Static [304 ETag]": {
+      "requests": 5230,
+      "failures": 0,
+      "rps": 210.59,
+      "avg_ms": 133.89,
+      "p50_ms": 9,
+      "p95_ms": 810,
+      "p99_ms": 1200
+    },
+    "GET 2_GET /api/targets [304 ETag]": {
+      "requests": 2114,
+      "failures": 0,
+      "rps": 85.12,
+      "avg_ms": 124.54,
+      "p50_ms": 9,
+      "p95_ms": 730,
+      "p99_ms": 1300
+    },
+    "POST 5_POST /api/sessions [202 Async WAL]": {
+      "requests": 2083,
+      "failures": 0,
+      "rps": 83.88,
+      "avg_ms": 129.86,
+      "p50_ms": 10,
+      "p95_ms": 760,
+      "p99_ms": 1300
+    },
+    "GET 6_GET /api/sessions?limit=20 [WAL Read]": {
+      "requests": 2042,
+      "failures": 0,
+      "rps": 82.22,
+      "avg_ms": 183.7,
+      "p50_ms": 23,
+      "p95_ms": 1000,
+      "p99_ms": 1300
+    },
+    "GET 4_GET /mantis_images/* [Immutable]": {
+      "requests": 2111,
+      "failures": 0,
+      "rps": 85.0,
+      "avg_ms": 141.58,
+      "p50_ms": 13,
+      "p95_ms": 820,
+      "p99_ms": 1600
+    },
+    "GET 0_Ping_GET / [200/304]": {
+      "requests": 3030,
+      "failures": 0,
+      "rps": 122.01,
+      "avg_ms": 38.48,
+      "p50_ms": 7,
+      "p95_ms": 96,
+      "p99_ms": 650
+    }
+  }
+}

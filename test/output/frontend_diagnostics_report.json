@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-25T08:08:41",
+  "plan": "Regras/11_plano_diagnostico_e_melhoria_frontend.md",
+  "sections": {
+    "2_integridade_dom": {
+      "ids_no_dom": 77,
+      "ids_referenciados_js": 67,
+      "ids_orfaos": [
+        "btn-beep-test",
+        "btn-manual-calibrate"
+      ],
+      "desktop_tab_card_forcado_block": [
+        ".tab-card",
+        ".ajustes-container.tab-card"
+      ],
+      "desktop_grid_template_columns": "1.05fr 1fr",
+      "modulos_ocultos_is_hidden_module": [
+        "<button> estatisticas (linha 33)",
+        "<span> target-recognition-info (linha 138)",
+        "<div> target-toolbar-row is-hidden-module (linha 141)",
+        "<div> round-kpi-grid is-hidden-module (linha 163)",
+        "<button> btn-start-round (linha 189)",
+        "<section> panel-stats (linha 205)",
+        "<button> estatisticas (linha 423)"
+      ],
+      "diagnostics_panel_sr_only": true,
+      "camera_error_banner_presente": false,
+      "botoes_mortos_sr_only": [
+        "tab-camera",
+        "tab-target",
+        "tab-pip",
+        "btn-toggle-camera",
+        "btn-flip"
+      ]
+    },
+    "5_contrato_backend": {
+      "fetch_api_sessions_no_frontend": {
+        "app.js": 0,
+        "ballistics_echarts.js": 0
+      },
+      "post_api_sessions": {
+        "status": 202,
+        "latencia_ms": 7.78,
+        "bytes": 611,
+        "target": "VIRTU_A4",
+        "shot_count": 4
+      }
+    },
+    "3_geometria": {
+      "homografia_erros_px": {
+        "roundtrip": 0.0,
+        "resolutionStale": 729.1501,
+        "resolutionRelock": 0.0,
+        "flipStale": 480.487,
+        "flipRelock": 0.0,
+        "zoomStale": 437.7334,
+        "zoomRelock": 0.0
+      },
+      "roi_max_erro_px": {
+        "x": 0.0,
+        "y": 0.0,
+        "cenarios": 24
+      },
+      "guardas_de_estado": {
+        "resolution": {
+          "calls": {
+            "startCamera": 1,
+            "unlockTarget": 0
+          },
+          "stillLocked": true,
+          "staleMatrix": true
+        },
+        "flip": {
+          "calls": {
+            "unlockTarget": 0
+          },
+          "isFlipped": true,
+          "stillLocked": true,
+          "staleMatrix": true
+        },
+        "zoom": {
+          "calls": {
+            "syncZoomUI": 0
+          },
+          "zoomLevel": 1,
+          "digitalZoom": 1
+        }
+      },
+      "listCameras_chamadas_antes_da_autorizacao": 1
+    },
+    "4_performance": {
+      "warpTargetView_600x800": {
+        "projectPoint_chamadas": 480000,
+        "objetos_efemeros_estimados": 960000,
+        "mediana_ms": 227.07,
+        "min_ms": 219.4,
+        "max_ms": 253.66,
+        "referencia_inline_zero_gc_ms": 13.68,
+        "ganho_estimado_pct": 94.0,
+        "divergencia_bytes_inline_vs_atual": 0
+      },
+      "ciclo_de_vida_rodadas": {
+        "afterStop": {
+          "history": 1,
+          "previousRound": false,
+          "roundNumber": 1
+        },
+        "afterArchive": {
+          "history": 0,
+          "previousRound": false,
+          "roundNumber": 2,
+          "currentShots": 0
+        },
+        "afterReset": {
+          "history": 0,
+          "previousRound": false,
+          "roundNumber": 1
+        }
+      },
+      "leituras_buffers_reciclados": {
+        "recycledArucoBuffer": 0,
+        "recycledLaserBuffer": 0
+      },
+      "updateBallisticMetrics_loops_for": 3
+    },
+    "1_regras_visuais": {
+      "border_radius_acima_4px": [],
+      "svg_stroke": {
+        "svgs": 6,
+        "finos": []
+      },
+      "sombras": {
+        "declaracoes": 3,
+        "pesadas": []
+      },
+      "backdrop_filter": [],
+      "emojis": [],
+      "font_weight_800_900": [],
+      "glow_pulse": [],
+      "gradientes": [],
+      "tipografia_inter": []
+    }
+  }
+}

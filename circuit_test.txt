@@ -1,0 +1,12 @@
+1⁰Comando no terminal.
+cd /home/adm360virtu/Arduino/TARGETS_VIRTU
+
+1¹Liberar porta.
+sudo ufw allow 8443/tcp
+
+2⁰Comando no terminal.
+.venv/bin/python3 edit/tools/servidor_dev.py
+
+2¹ Caso queira arquivos zipados.
+.venv/bin/python3 edit/tools/servidor_dev.py --gzip
+

@@ -1,0 +1,60 @@
+# Segurança e Credenciais 
+.env
+.env.*
+!.env.example
+.cert/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Dados Locais e Logs
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Ambiente Python e Caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Backups e Arquivos de Sistema/Editor
+backup/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+ 
+# Bloquear todas as imagens (incluindo maiúsculas)
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.gif
+*.GIF
+*.bmp
+*.BMP
+*.webp
+*.WEBP
+*.svg
+*.SVG
+*.ico
+*.ICO
+*.tiff
+*.TIFF
+
+# Bloquear tudo dentro da pasta lib/ na raiz do projeto
+/lib/
+
+# bloquear tudo dentro da pasta android/ na raiz do projeto
+/android_app/
+
